@@ -1,0 +1,402 @@
+---
+title: "Exploring Scottish Peaks"
+author: "Megan McKellar"
+date: "2025-09-22"
+categories: [tidytuesday, R code, data cleaning, mapping]
+image: "glencoe2.jpg"
+format: 
+  html: 
+    theme: yeti
+    code-fold: true
+    toc: true
+    other-links: 
+      - text: tidytuesday
+        href: https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-08-19/readme.md
+      - text: Database of British and Irish Hills
+        href: https://www.hills-database.co.uk/
+execute:
+  warning: false
+---
+
+<p>
+This curated `tidytuesday` data set comes from The Database of British and Irish Hills. It's a list of about 600 Scottish mountains that are classified as a Munro, Munro Top, or none. A Munro is a mountain with a distinct summit of and an elevation of at least 3,000 ft (914.4 meters) while a Munro Top is a subsidiary summit on the same mountain that is also over 3,000 feet. 
+
+<p>
+
+The Database of British and Irish Hills describes a variety of names for peaks of different heights and prominence. For example, peaks that are taller than 2,500 feet and less than 3,000 feet are called Corbetts, while Grahams are between 2,000 and 2,500 feet.
+
+<p>
+
+For this example I'll focus on exploring the data set, cleaning as needed, understanding when mountain peak classifications changed, finding the tallest Munros and Munro tops, and some simple data visualizations. 
+<p>
+```{r}
+#| label: loading packages
+
+library(pacman)
+
+p_load(dplyr, tidyr, ggplot2, cowplot, sf, rnaturalearth, ggview)
+
+# scottish munro data is week 33
+tuesdata <- tidytuesdayR::tt_load(2025, week = 33)
+
+scot_mun <- tuesdata$scottish_munros
+
+```
+
+### Peeking at Peak Data
+
+Let's start by learning the data set dimensions and the types of variables in the data set. 
+<p>
+```{r}
+#| label: data glimpse
+
+# what's in the data set
+dplyr::glimpse(scot_mun)
+
+# how many missing values in the year columns?
+# sapply(scot_mun[,7:17], function(x) sum(is.na(x)))
+
+```
+<p>
+We can use the `DT` package to more closely examine the comments and geographical classification as of 2021. 
+
+```{r}
+#| label: peak at the data
+
+# include the most recent year only.
+
+scot_mun |> 
+  select(DoBIH_number, Name, Height_ft,
+         `2021`, Comments) |> 
+  DT::datatable(colnames = c("DoBIH #", "Name", "Height (ft)", "Category 2021", "Comments"),
+                rownames = FALSE,
+                options = list(pageLength = 5, language = list(search = 'Filter:'),
+                               lengthMenu = c(5, 10, 25, 50))
+                )
+
+
+```
+<p>
+We can see some additional cleaning is needed as the last entry in the dataset is a comment rather than a peak. This explains why `DoBIH_number` is coded as a character variable rather than as an integer. 
+<p>
+From the comments we can see that a number peaks have been reclassified over the years. For example, the peak Beinn a' Chlaidheimh was classified as a Munro in 1974, but after a [geological survey in 2011](https://www.hills-database.co.uk/database_notes.html#beinn_a_chlaidheimh) found that it was in fact just shy of the 3,000 ft cutoff to be labelled a Munro! Today Beinn a' Chlaidheimh is classified as a Corbett. This would explain by peaks with an elevation of less than 3,000 ft don't have a category listed, but others are tall enough to meet the threshold for Munros but lack a label. 
+<p>
+For example, why doesn't the peak Stob Binnein - Creag a' Bhragit (DoBIH #39) with a height of 3,082 ft have a designated category? No explanation is given in the comments column, but the Database of British and Irish Hills website states that remapping efforts have resulted in many [Monro Tops being deleted](https://www.hills-database.co.uk/database_notes.html#deltops) on subjective grounds. Some further digging in the Database's changelog confirms that this peak is a deleted Munro Top. 
+<p>
+```{r}
+#| label: beinn a' chlaidheimh over the years
+scot_mun |> 
+  filter(Name %in% c("Beinn a' Chlaidheimh")) |> 
+  tidyr::pivot_longer(cols = 7:17, names_to = "year", values_to = "class") |> 
+  mutate(year = as.integer(year)) |> 
+  arrange(DoBIH_number, Name, year) |>
+  select(year, class) |> 
+  knitr::kable(col.names = c("Year", "Classification"),
+               caption = "Classification over time for Beinn a' Chlaidheimh")
+
+```
+
+<p>
+
+```{r}
+#| include: false
+#| eval: false
+#| label: peaks taller than 3000 without designation
+
+# not including this chunk b/c hills database explains that peaks have been "deleted" due to remapping and subjective classification efforts
+
+scot_mun |> 
+  select(DoBIH_number, Name, Height_ft, `2021`, Comments) |> 
+  filter(Height_ft >= 3000) |> 
+  filter(is.na(`2021`)) |> 
+  DT::datatable(colnames = c("DoBIH #", "Name", "Height (ft)", "Category 2021", "Comments"),
+                rownames = FALSE,
+                options = list(pageLength = 5, language = list(search = 'Filter:'),
+                               lengthMenu = c(5, 10, 25, 50))
+                )
+
+```
+<p>
+Let's finish with a final examination of peak classification over time. 
+<p>
+```{r}
+#| label: pivot longer 
+
+scot_long <- scot_mun[-604,] |> 
+  tidyr::pivot_longer(cols = 7:17, names_to = "year", values_to = "class") |> 
+  mutate(year = as.integer(year)) |> 
+  arrange(DoBIH_number, Name, year)
+
+scot_long |> 
+    mutate(class = tidyr::replace_na(class, "none listed")) |> 
+  group_by(year, class) |> 
+  summarise(n = n()) |> 
+  pivot_wider(names_from = class, values_from = n) |> 
+  knitr::kable(col.names = c("Year", "Munro", "Munro Top", "Other"),
+               caption = "Peak categories over the years.")
+
+```
+
+<br>
+
+```{r}
+#| label: changes over time
+# add column that designates a classification switch
+scot_long <- scot_long |> 
+  group_by(DoBIH_number) |> 
+  mutate(class_lag = lag(class),
+         switch = case_when(class == class_lag ~ NA,
+                            class != class_lag ~ "switch")) |> 
+  select(-class_lag)
+
+# which year saw the greatest number of 
+# classification switches?
+scot_long |> 
+  mutate(switch = replace_na(switch, "no switch")) |> 
+  group_by(year, switch) |> 
+  summarise(n = n()) |> 
+  pivot_wider(names_from = switch, values_from = n) |> 
+  mutate(switch = replace_na(switch, 0)) |> 
+  dplyr::select(-`no switch`) |> 
+  knitr::kable(col.names = c("Year", "n"),
+              caption = "Number of Category Switches Each Year") |> 
+  kableExtra::kable_styling(bootstrap_options = "striped", full_width = F)
+
+  
+```
+
+```{r}
+#| echo: true
+#| output: false
+# was any peak re-designated more than once?
+scot_long |> 
+  dplyr::filter(switch == "switch") |> 
+  group_by(DoBIH_number, Name) |> 
+  summarise(n = n()) |> 
+  dplyr::filter(n > 1) |> 
+  arrange(Name)
+
+switch_ids <- as.character(c(312, 315, 809, 523, 308, 1010))
+
+```
+<p>
+A small handful of peaks were re-classified more than once. The table below lists what these peaks were originally classified as and the years it was changed. 
+<p>
+```{r}
+#| label: peaks that have been relabeled more than once. 
+#| 
+switch_tab <- scot_long |> 
+  dplyr::filter(DoBIH_number %in% switch_ids) |> 
+  select(DoBIH_number, Name, year, switch, class) |>
+  dplyr::filter(switch == "switch") |> 
+  dplyr::select(-switch) |> 
+  arrange(Name, year)
+
+
+pre_switch <- scot_long |> 
+  dplyr::filter(DoBIH_number %in% switch_ids) |> 
+  #dplyr::filter(!is.na(class)) |> 
+  select(DoBIH_number, Name, year, class, switch) |> 
+  group_by(DoBIH_number) |> 
+  mutate(test = lead(switch, n = 1),
+         pre_switch = case_when(is.na(switch) & test == "switch" ~ "pre")) |> 
+  select(-test) |> 
+  dplyr::filter(pre_switch == "pre") |> 
+  slice_head(n = 1) |> 
+  select(-switch, -pre_switch)
+
+switch_table <- rbind(switch_tab, pre_switch)
+
+switch_table |> 
+  arrange(Name, year) |> 
+  knitr::kable(col.names = c("DoBIH #", "Name", "Year", "Class"),
+               caption = "Mountains re-classified more than once.") |> 
+  kableExtra::kable_paper(full_width = F) |> 
+  kableExtra::row_spec(c(1:3, 7:9, 13:15), background = "#D9D9D9")
+
+```
+<p>
+
+#### A bit of cleaning & processing
+
+The data needs to be prepared further before I can proceed with a simple statistical summary and visuals. I'm going to remove the entry that's actually a comment as well as all entries that are not Munros or Munro Tops in 2021. 
+<p>
+
+```{r}
+#| label: cleaning
+#| echo: true
+
+scot_mun_clean <- scot_mun[-604,] |> 
+  dplyr::filter(!is.na(`2021`))
+
+
+```
+<p>
+
+### Elevation Statistics
+
+
+```{r}
+scot_mun_clean |> 
+  group_by(`2021`) |>
+  summarise(n = n(),
+            smallest = min(Height_ft),
+            tallest = max(Height_ft),
+            average = mean(Height_ft),
+            median = median(Height_ft)) |> 
+  knitr::kable(digits = 0,
+               col.names = c("", "n", "Shortest", "Tallest", "Average", "Median"),
+               caption = "Peak Summary Statistics")
+  
+```
+
+<p>
+
+```{r}
+#| label: tallest peaks 
+
+scot_mun_clean |> 
+  select(DoBIH_number, Name, Height_ft, `2021`) |> 
+  group_by(`2021`) |> 
+  dplyr::arrange(desc(Height_ft)) |> 
+  slice_head(n = 10) |> 
+  ungroup() |> 
+  mutate(Name = forcats::fct_reorder(Name, Height_ft)) %>%
+  ggplot(aes(x = Name,
+             y = Height_ft)) +
+  # set geom lower limit to 3000 b/c munros are at least 3001
+  geom_segment(aes(xend = Name, yend = 3000)) +
+  geom_point(aes(color = `2021`, shape = `2021`),
+             size = 4) +
+  labs(y = "Height (ft)",
+       x = "",
+       title = "Ten Tallest Munros & Munro Tops") +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = -1),
+        legend.position = "bottom",
+        legend.title = element_blank()) +
+  scale_color_manual(values = c("#117A8B", "#79115C")) +
+  scale_shape_manual(values = c(15, 19)) +
+  coord_flip()
+
+
+
+```
+
+
+### Mapping the peaks
+
+The coordinates given use the British National Grid (OSGB36) projection. I want to transformed these coordinates to EPSG 4326 (used for GPS).
+
+```{r}
+#| label: get some geographic info
+
+# some geographic info
+# fetch county shape for Scotland
+scotland <- rnaturalearth::ne_countries(geounit = "scotland", 
+                                        type = "map_units",
+                                        scale="large")
+
+# fetch spatial information for water features
+water <-rnaturalearth:: ne_download(scale=10, 
+                                    type="lakes", 
+                                    category="physical")
+
+# fetch spatial information for rivers
+river <- ne_download(scale=10, 
+                     type="rivers_lake_centerlines", 
+                     category="physical")
+
+sf_use_s2(FALSE)
+waterscotland <- st_filter(water, scotland)
+riverscotland <- st_filter(river, scotland)
+
+munros2021 <- scot_mun_clean |> 
+  select(DoBIH_number, Name, Height_m, Height_ft, xcoord, ycoord, `2021`, Comments) |> 
+  dplyr::filter(`2021` %in% c("Munro", "Munro Top"))
+
+
+# crs EPSG 27700 = British National Grid -- United Kingdom Ordnance Survey
+# crds EPSG 4326 = World Geodetic System 1984, used in GPS
+projection <- st_as_sf(scot_mun_clean |> 
+                         filter(!is.na(xcoord),
+                                !is.na(ycoord)),
+                       coords=c("xcoord","ycoord"),
+                       crs = 27700) |> 
+  st_transform(crs=4326) |> 
+  st_coordinates()
+
+scot_mun_clean <- scot_mun_clean |> 
+  filter(!is.na(xcoord)) |> 
+  cbind(projection)
+
+
+```
+
+
+```{r}
+#| eval: false
+#| include: false
+map1 <- scotland |> 
+  ggplot() +
+  geom_sf() +
+  geom_sf(data=waterscotland, fill="blue") +
+  geom_sf(data=riverscotland, color="blue") +
+  geom_point(data=scot_mun_clean, 
+             aes(x=X, y=Y, fill=`2021`, size = Height_ft/1000, label = Name),
+             shape=24,
+             color = "black") +
+  theme_light() +
+  coord_sf(xlim=c(-8,-2), ylim = c(55.5, 59.5)) +
+  scale_fill_brewer(palette="Dark2", direction=-1) +
+  labs(color="",
+       title="Munros of Scotland",
+       caption="TidyTuesday") +
+  theme(legend.position="right",
+        plot.title.position="plot",
+        axis.title = element_blank(),
+        panel.background = element_rect(fill="lightblue"),
+        legend.key = element_rect(fill = NA))
+
+map1
+
+plotly::ggplotly(map1)
+
+```
+
+```{r}
+#| label: static map with ^
+
+# reminder: X is longitude, Y is latitude
+
+scotland |> 
+  ggplot() +
+  geom_sf() +
+  geom_sf(data=waterscotland, fill="blue") +
+  geom_sf(data=riverscotland, color="blue") +
+  geom_point(data=scot_mun_clean, 
+             aes(x=X, 
+                 y=Y, 
+                 color=`2021`, 
+                 size = Height_ft),
+             shape="^",
+             alpha = 0.8) +
+  theme_light() +
+  coord_sf(xlim=c(-7.8,-2), 
+           ylim = c(55.9, 58.7)) +
+  scale_color_manual(values = c("#117A8B", "#79115C")) +
+  scale_size_continuous(limits=c(3000, 4500), 
+                         breaks=seq(3000, 45000, by=500)) +
+  labs(color="",
+       title="Munros of Scotland as of 2021",
+       caption="Data from TidyTuesday & the Database of British and Irish Hills") +
+  theme(legend.position="right",
+        plot.title.position="plot",
+        axis.title = element_blank(),
+        panel.background = element_rect(fill="#cce6fe"),
+        legend.key = element_rect(fill = NA)) +
+  guides(color = guide_legend(override.aes = list(size = 10)),
+         size = guide_legend(title = "Height (ft)"))
+
+```
+

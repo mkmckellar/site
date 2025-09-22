@@ -1,0 +1,299 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Bio",
+    "section": "",
+    "text": "Hello, I’m Megan! I am a life sciences research professional with many years of experience in plant and microbiology-related research. Recently my professional focus has grown from benchside work to leveraging data analysis and statistical modeling to extract meaning from complex data sets. While I’m proficient in R, I’m actively expanding my knowledge of other skill sets.\nWhen I’m not staring at a screen, I enjoy tending to my patio garden, hiking, and reading. Let’s connect and you can tell me about your book recommendations, favorite learning resources, or cool R packages!\n\nEducation\nCalifornia State University, East Bay | Hayward, CA\nMS in Statistics | May 2024\nUniversity of California, Davis | Davis, CA\nBS in Biological Sciences with a minor in Spanish | June 2014\nLaney College | Oakland, CA\nAS in Mathematics | June 2022\n\n\nProfessional Experience\nAssociate Scientist at Pivot Bio | Berkeley, CA | 2017-2025\nResearch Assistant at Santa Cruz Biotechnology | Santa Cruz, CA | 2014-2017\nMath Tutor at Partners in Learning | Davis, CA | 2013-2014\nStudent Laboratory & Greenhouse Assistant II at UC Davis | Davis, CA | 2011-2013\n\n \n    \n  \n    \n     LinkedIn\n  \n  \n    \n     Github",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Bio",
+    "section": "",
+    "text": "California State University, East Bay | Hayward, CA\nMS in Statistics | May 2024\nUniversity of California, Davis | Davis, CA\nBS in Biological Sciences with a minor in Spanish | June 2014",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Megan McKellar",
+    "section": "",
+    "text": "Associate Scientist at Pivot Bio | Berkeley, CA | 2017-2025\nResearch Assistant at Santa Cruz Biotechnology | Santa Cruz, CA | 2014-2017\nMath Tutor at Partners in Learning | Davis, CA | 2013-2014\nStudent Laboratory & Greenhouse Assistant II at UC Davis | Davis, CA | 2011-2013",
+    "crumbs": [
+      "About",
+      "About me"
+    ]
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog & Portfolio",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nExploring Scottish Peaks\n\n\n\n\n\n\ntidytuesday\n\n\nR code\n\n\ndata cleaning\n\n\nmapping\n\n\n\n\n\n\n\n\n\nSep 22, 2025\n\n\nMegan McKellar\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Blog & Portfolio"
+    ]
+  },
+  {
+    "objectID": "blog/welcome/index.html",
+    "href": "blog/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "talks/talk_1/index.html",
+    "href": "talks/talk_1/index.html",
+    "title": "Building Website in R: Step by Step Introduction to blogdown",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "projects/project_1/index.html",
+    "href": "projects/project_1/index.html",
+    "title": "project_1",
+    "section": "",
+    "text": "In this project I use EHR to explore the hospital transfers."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This is an example of grid listing. You can specify the content in the yaml header in the .qmd file.\nIt is convenient to use id to link to multiple folders.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects Template example"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#grid-listing",
+    "href": "projects/index.html#grid-listing",
+    "title": "Projects",
+    "section": "",
+    "text": "This is an example of grid listing. You can specify the content in the yaml header in the .qmd file.\nIt is convenient to use id to link to multiple folders.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects Template example"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#table-listing",
+    "href": "projects/index.html#table-listing",
+    "title": "Projects",
+    "section": "Table listing",
+    "text": "Table listing\nThis is an example of table listing.\n\nPackages\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\npkg_1\n\n\n\n\n\n\n\npkg_2\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects Template example"
+    ]
+  },
+  {
+    "objectID": "projects/project_2/index.html",
+    "href": "projects/project_2/index.html",
+    "title": "project_2",
+    "section": "",
+    "text": "In this project I work on Machine Learning methods to predict in-hospital mortality."
+  },
+  {
+    "objectID": "projects/pkg_1/index.html",
+    "href": "projects/pkg_1/index.html",
+    "title": "pkg_1",
+    "section": "",
+    "text": "This package does this."
+  },
+  {
+    "objectID": "projects/pkg_2/index.html",
+    "href": "projects/pkg_2/index.html",
+    "title": "pkg_2",
+    "section": "",
+    "text": "This package does this."
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "“Genetic remodeling of soil diazotrophs enables partial replacement of synthetic nitrogen fertilizer with biological nitrogen fixation in maize”. Scientific Reports,14, 27754. November 2024.\n“Enabling Biological Nitrogen Fixation in Fertilized Fields”. ACS Synthetic Biology, Volume 10, Issue 12, Dec 2021, Pages 3264-3277\n“Biological nitrogen fixation in maize: optimizing nitrogenase expression in root-associated diazotroph”. Journal of Experimental Botany, Volume 21, Issue 15, July 2020, Pages 4591-4603",
+    "crumbs": [
+      "Talks Template Example"
+    ]
+  },
+  {
+    "objectID": "talks/index.html#rstats",
+    "href": "talks/index.html#rstats",
+    "title": "Talks",
+    "section": "",
+    "text": "Talk at Oslo UseR meetup\n\n\n\n\n\nApr 2, 2019\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Talks"
+    ]
+  },
+  {
+    "objectID": "talks/index.html#electronic-health-records",
+    "href": "talks/index.html#electronic-health-records",
+    "title": "Talks",
+    "section": "Electronic Health Records",
+    "text": "Electronic Health Records\n\n\n\n\n\n\n\n\n\n\nLearning from Hospital EHR data with R\n\n\n\n\n\nA 15 minutes introduction to hospital EHR data\n\n\n\n\n\nOct 28, 2019\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Talks"
+    ]
+  },
+  {
+    "objectID": "blog/post-with-code/index.html",
+    "href": "blog/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about_template.html",
+    "href": "about_template.html",
+    "title": "About this template",
+    "section": "",
+    "text": "About this template\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nThis is to demonstrate how to make a drop-down page from the navigation bar."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bio",
+    "section": "",
+    "text": "Hello, I’m Megan! I am a life sciences research professional with many years of experience in plant and microbiology-related research. Recently my professional focus has grown from benchside work to leveraging data analysis and statistical modeling to extract meaning from complex data sets. While I’m proficient in R, I’m actively expanding my knowledge of other skill sets.\nWhen I’m not staring at a screen, I enjoy tending to my patio garden, hiking, and reading. Let’s connect and you can tell me about your book recommendations, favorite learning resources, or cool R packages!\n\nEducation\nCalifornia State University, East Bay | Hayward, CA\nMS in Statistics | May 2024\nUniversity of California, Davis | Davis, CA\nBS in Biological Sciences with a minor in Spanish | June 2014\nLaney College | Oakland, CA\nAS in Mathematics | June 2022\n\n\nProfessional Experience\nAssociate Scientist at Pivot Bio | Berkeley, CA | 2017-2025\nResearch Assistant at Santa Cruz Biotechnology | Santa Cruz, CA | 2014-2017\nMath Tutor at Partners in Learning | Davis, CA | 2013-2014\nStudent Laboratory & Greenhouse Assistant II at UC Davis | Davis, CA | 2011-2013\n\n \n    \n  \n    \n     LinkedIn\n  \n  \n    \n     Github",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "python_projects/index.html",
+    "href": "python_projects/index.html",
+    "title": "Python Projects",
+    "section": "",
+    "text": "Just look at the photo\n\n\n\n\n\nSep 6, 2020\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Python Projects"
+    ]
+  },
+  {
+    "objectID": "python_projects/index.html#rstats",
+    "href": "python_projects/index.html#rstats",
+    "title": "Python Projects",
+    "section": "",
+    "text": "Just look at the photo\n\n\n\n\n\nSep 6, 2020\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Python Projects"
+    ]
+  },
+  {
+    "objectID": "python_projects/index.html#electronic-health-records",
+    "href": "python_projects/index.html#electronic-health-records",
+    "title": "Python Projects",
+    "section": "Electronic Health Records",
+    "text": "Electronic Health Records\n\n\n\n\n\n\n\n\n\n\nPython Project Example 2\n\n\n\n\n\nJust look at another cute photo\n\n\n\n\n\nSep 6, 2020\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Python Projects"
+    ]
+  },
+  {
+    "objectID": "python_projects/py_project_1/index.html",
+    "href": "python_projects/py_project_1/index.html",
+    "title": "Python Project Example 1",
+    "section": "",
+    "text": "Le Corgi"
+  },
+  {
+    "objectID": "python_projects/py_project_2/index.html",
+    "href": "python_projects/py_project_2/index.html",
+    "title": "Python Project Example 2",
+    "section": "",
+    "text": "Another cute photo!"
+  },
+  {
+    "objectID": "talks/index.html#publication-1",
+    "href": "talks/index.html#publication-1",
+    "title": "Publications & Contributions",
+    "section": "",
+    "text": "No matching items",
+    "crumbs": [
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "talks/index.html#publication-2",
+    "href": "talks/index.html#publication-2",
+    "title": "Publications & Contributions",
+    "section": "Publication 2",
+    "text": "Publication 2\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "talks/index.html#publication-3",
+    "href": "talks/index.html#publication-3",
+    "title": "Publications & Contributions",
+    "section": "Publication 3",
+    "text": "Publication 3",
+    "crumbs": [
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "about.html#professional-experience",
+    "href": "about.html#professional-experience",
+    "title": "Bio",
+    "section": "",
+    "text": "Associate Scientist at Pivot Bio | Berkeley, CA | 2017-2025\nResearch Assistant at Santa Cruz Biotechnology | Santa Cruz, CA | 2014-2017\nMath Tutor at Partners in Learning | Davis, CA | 2013-2014\nStudent Laboratory & Greenhouse Assistant II at UC Davis | Davis, CA | 2011-2013",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "portfolio/one_star_reviews.html",
+    "href": "portfolio/one_star_reviews.html",
+    "title": "One Star Book Reviews",
+    "section": "",
+    "text": "I forget where I was first introduced to Quarto presentations, but I remember many presenters using it at JSM 2024. I was very motivated to learn how to use it after seeing It was easy to see how useful it is for stunning presentations.\nAt JSM 2024 I saw many speakers sharing stunning presentations using Quarto and revealjs, and became very motivated to learn these how to do this myself - particularly when shown how useful it can be to teach R code.\nThoughts about re-doing all my class lecture slides with revealjs.\nThankfully, there are many wonderful online resources for teaching oneself from Quarto to blogs like Slidecraft 101 by Emil Hvitfeldt.\n\nAbout Goodreads\nGoodreads is a soft-of social media site for tracking books you’ve read or want to read. You can also connect with fellow readers, search books, and see books recommended by the algorithm. It’s also a wonderful place to find some delightfully silly, snarky, and unhinged one-star reviews.\nWhat do I consider a silly review?\n\nComplaining that you can’t emotionally connect with any of the characters because they’re all unlikable.\nComplaints about non-linear storytelling.\nToo many characters and points-of-views\nLeaving a bad review because you “don’t get it”\nCompletely off-topic and not really related to the book??\nDoesn’t like the voice of the narrator for audiobooks.\nContradictory! High praise but still one-star?\n\nLook. I get it. Not all books are enjoyable, but not understanding the main character’s motivations doesn’t prevent me from acknowledging well-written prose.\n\n\nLet the game begin!\nHoover your cursor over the presentation and use the arrow keys to navigate the presentation.",
+    "crumbs": [
+      "Portfolio",
+      "One Star Book Reviews"
+    ]
+  },
+  {
+    "objectID": "portfolio/one_star_reviews.html#title",
+    "href": "portfolio/one_star_reviews.html#title",
+    "title": "One Star Book Reviews",
+    "section": "",
+    "text": "Commentary about wanting to learn how to use RevealJS to make presentations with Quarto, and about the one star book review game.\n\nlist and link useful blogs for inspiration\nlist and link RevealJS and Quarto extensions like embedio.\n\n\n\nComments\n\n\n\nInsert of presentation using embedio extension.",
+    "crumbs": [
+      "Portfolio",
+      "One Star Book Reviews"
+    ]
+  },
+  {
+    "objectID": "blog/scottish_hills/index.html",
+    "href": "blog/scottish_hills/index.html",
+    "title": "Exploring Scottish Peaks",
+    "section": "",
+    "text": "This curated tidytuesday data set comes from The Database of British and Irish Hills. It’s a list of about 600 Scottish mountains that are classified as a Munro, Munro Top, or none. A Munro is a mountain with a distinct summit of and an elevation of at least 3,000 ft (914.4 meters) while a Munro Top is a subsidiary summit on the same mountain that is also over 3,000 feet.\n\nThe Database of British and Irish Hills describes a variety of names for peaks of different heights and prominence. For example, peaks that are taller than 2,500 feet and less than 3,000 feet are called Corbetts, while Grahams are between 2,000 and 2,500 feet.\n\nFor this example I’ll focus on exploring the data set, cleaning as needed, understanding when mountain peak classifications changed, finding the tallest Munros and Munro tops, and some simple data visualizations.\n\n\n\nCode\nlibrary(pacman)\n\np_load(dplyr, tidyr, ggplot2, cowplot, sf, rnaturalearth, ggview)\n\n# scottish munro data is week 33\ntuesdata &lt;- tidytuesdayR::tt_load(2025, week = 33)\n\nscot_mun &lt;- tuesdata$scottish_munros\n\n\n\nPeeking at Peak Data\nLet’s start by learning the data set dimensions and the types of variables in the data set.\n\n\n\nCode\n# what's in the data set\ndplyr::glimpse(scot_mun)\n\n\nRows: 604\nColumns: 18\n$ DoBIH_number &lt;chr&gt; \"1\", \"17\", \"18\", \"32\", \"26\", \"27\", \"28\", \"39\", \"33\", \"30\"…\n$ Name         &lt;chr&gt; \"Ben Chonzie\", \"Ben Vorlich\", \"Stuc a' Chroin\", \"Ben Lomo…\n$ Height_m     &lt;dbl&gt; 931.0, 985.3, 973.0, 973.7, 1174.0, 1165.0, 1068.0, 923.0…\n$ Height_ft    &lt;dbl&gt; 3054, 3233, 3192, 3195, 3852, 3822, 3504, 3028, 3169, 343…\n$ xcoord       &lt;dbl&gt; 277324, 262912, 261746, 236707, 243276, 243481, 243842, 2…\n$ ycoord       &lt;dbl&gt; 730857, 718916, 717465, 702863, 724417, 722712, 722052, 7…\n$ `1891`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1921`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1933`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1953`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1969`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1974`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1981`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1984`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1990`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `1997`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ `2021`       &lt;chr&gt; \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Munro\", \"Mu…\n$ Comments     &lt;chr&gt; NA, NA, NA, NA, NA, \"1891: Am Binnein (Stobinain)\", NA, N…\n\n\nCode\n# how many missing values in the year columns?\n# sapply(scot_mun[,7:17], function(x) sum(is.na(x)))\n\n\n\nWe can use the DT package to more closely examine the comments and geographical classification as of 2021.\n\n\nCode\n# include the most recent year only.\n\nscot_mun |&gt; \n  select(DoBIH_number, Name, Height_ft,\n         `2021`, Comments) |&gt; \n  DT::datatable(colnames = c(\"DoBIH #\", \"Name\", \"Height (ft)\", \"Category 2021\", \"Comments\"),\n                rownames = FALSE,\n                options = list(pageLength = 5, language = list(search = 'Filter:'),\n                               lengthMenu = c(5, 10, 25, 50))\n                )\n\n\n\n\n\n\n\nWe can see some additional cleaning is needed as the last entry in the dataset is a comment rather than a peak. This explains why DoBIH_number is coded as a character variable rather than as an integer.\n\nFrom the comments we can see that a number peaks have been reclassified over the years. For example, the peak Beinn a’ Chlaidheimh was classified as a Munro in 1974, but after a geological survey in 2011 found that it was in fact just shy of the 3,000 ft cutoff to be labelled a Munro! Today Beinn a’ Chlaidheimh is classified as a Corbett. This would explain by peaks with an elevation of less than 3,000 ft don’t have a category listed, but others are tall enough to meet the threshold for Munros but lack a label.\n\nFor example, why doesn’t the peak Stob Binnein - Creag a’ Bhragit (DoBIH #39) with a height of 3,082 ft have a designated category? No explanation is given in the comments column, but the Database of British and Irish Hills website states that remapping efforts have resulted in many Monro Tops being deleted on subjective grounds. Some further digging in the Database’s changelog confirms that this peak is a deleted Munro Top.\n\n\n\nCode\nscot_mun |&gt; \n  filter(Name %in% c(\"Beinn a' Chlaidheimh\")) |&gt; \n  tidyr::pivot_longer(cols = 7:17, names_to = \"year\", values_to = \"class\") |&gt; \n  mutate(year = as.integer(year)) |&gt; \n  arrange(DoBIH_number, Name, year) |&gt;\n  select(year, class) |&gt; \n  knitr::kable(col.names = c(\"Year\", \"Classification\"),\n               caption = \"Classification over time for Beinn a' Chlaidheimh\")\n\n\n\nClassification over time for Beinn a’ Chlaidheimh\n\n\nYear\nClassification\n\n\n\n\n1891\nNA\n\n\n1921\nNA\n\n\n1933\nNA\n\n\n1953\nNA\n\n\n1969\nNA\n\n\n1974\nMunro\n\n\n1981\nMunro\n\n\n1984\nMunro\n\n\n1990\nMunro\n\n\n1997\nMunro\n\n\n2021\nNA\n\n\n\n\n\n\n\nLet’s finish with a final examination of peak classification over time.\n\n\n\nCode\nscot_long &lt;- scot_mun[-604,] |&gt; \n  tidyr::pivot_longer(cols = 7:17, names_to = \"year\", values_to = \"class\") |&gt; \n  mutate(year = as.integer(year)) |&gt; \n  arrange(DoBIH_number, Name, year)\n\nscot_long |&gt; \n    mutate(class = tidyr::replace_na(class, \"none listed\")) |&gt; \n  group_by(year, class) |&gt; \n  summarise(n = n()) |&gt; \n  pivot_wider(names_from = class, values_from = n) |&gt; \n  knitr::kable(col.names = c(\"Year\", \"Munro\", \"Munro Top\", \"Other\"),\n               caption = \"Peak categories over the years.\")\n\n\n\nPeak categories over the years.\n\n\nYear\nMunro\nMunro Top\nOther\n\n\n\n\n1891\n283\n255\n65\n\n\n1921\n276\n267\n60\n\n\n1933\n276\n267\n60\n\n\n1953\n276\n267\n60\n\n\n1969\n276\n267\n60\n\n\n1974\n279\n262\n62\n\n\n1981\n276\n241\n86\n\n\n1984\n277\n240\n86\n\n\n1990\n277\n240\n86\n\n\n1997\n284\n227\n92\n\n\n2021\n282\n226\n95\n\n\n\n\n\n\n\n\nCode\n# add column that designates a classification switch\nscot_long &lt;- scot_long |&gt; \n  group_by(DoBIH_number) |&gt; \n  mutate(class_lag = lag(class),\n         switch = case_when(class == class_lag ~ NA,\n                            class != class_lag ~ \"switch\")) |&gt; \n  select(-class_lag)\n\n# which year saw the greatest number of \n# classification switches?\nscot_long |&gt; \n  mutate(switch = replace_na(switch, \"no switch\")) |&gt; \n  group_by(year, switch) |&gt; \n  summarise(n = n()) |&gt; \n  pivot_wider(names_from = switch, values_from = n) |&gt; \n  mutate(switch = replace_na(switch, 0)) |&gt; \n  dplyr::select(-`no switch`) |&gt; \n  knitr::kable(col.names = c(\"Year\", \"n\"),\n              caption = \"Number of Category Switches Each Year\") |&gt; \n  kableExtra::kable_styling(bootstrap_options = \"striped\", full_width = F)\n\n\n\nNumber of Category Switches Each Year\n\n\nYear\nn\n\n\n\n\n1891\n0\n\n\n1921\n33\n\n\n1933\n2\n\n\n1953\n0\n\n\n1969\n0\n\n\n1974\n3\n\n\n1981\n16\n\n\n1984\n0\n\n\n1990\n0\n\n\n1997\n10\n\n\n2021\n1\n\n\n\n\n\n\n\n\n\nCode\n# was any peak re-designated more than once?\nscot_long |&gt; \n  dplyr::filter(switch == \"switch\") |&gt; \n  group_by(DoBIH_number, Name) |&gt; \n  summarise(n = n()) |&gt; \n  dplyr::filter(n &gt; 1) |&gt; \n  arrange(Name)\n\nswitch_ids &lt;- as.character(c(312, 315, 809, 523, 308, 1010))\n\n\n\nA small handful of peaks were re-classified more than once. The table below lists what these peaks were originally classified as and the years it was changed.\n\n\n\nCode\nswitch_tab &lt;- scot_long |&gt; \n  dplyr::filter(DoBIH_number %in% switch_ids) |&gt; \n  select(DoBIH_number, Name, year, switch, class) |&gt;\n  dplyr::filter(switch == \"switch\") |&gt; \n  dplyr::select(-switch) |&gt; \n  arrange(Name, year)\n\n\npre_switch &lt;- scot_long |&gt; \n  dplyr::filter(DoBIH_number %in% switch_ids) |&gt; \n  #dplyr::filter(!is.na(class)) |&gt; \n  select(DoBIH_number, Name, year, class, switch) |&gt; \n  group_by(DoBIH_number) |&gt; \n  mutate(test = lead(switch, n = 1),\n         pre_switch = case_when(is.na(switch) & test == \"switch\" ~ \"pre\")) |&gt; \n  select(-test) |&gt; \n  dplyr::filter(pre_switch == \"pre\") |&gt; \n  slice_head(n = 1) |&gt; \n  select(-switch, -pre_switch)\n\nswitch_table &lt;- rbind(switch_tab, pre_switch)\n\nswitch_table |&gt; \n  arrange(Name, year) |&gt; \n  knitr::kable(col.names = c(\"DoBIH #\", \"Name\", \"Year\", \"Class\"),\n               caption = \"Mountains re-classified more than once.\") |&gt; \n  kableExtra::kable_paper(full_width = F) |&gt; \n  kableExtra::row_spec(c(1:3, 7:9, 13:15), background = \"#D9D9D9\")\n\n\n\nMountains re-classified more than once.\n\n\nDoBIH #\nName\nYear\nClass\n\n\n\n\n312\nAn Gearanach\n1891\nMunro\n\n\n312\nAn Gearanach\n1921\nMunro Top\n\n\n312\nAn Gearanach\n1933\nMunro\n\n\n315\nAn Gearanach - An Garbhanach\n1891\nMunro Top\n\n\n315\nAn Gearanach - An Garbhanach\n1921\nMunro\n\n\n315\nAn Gearanach - An Garbhanach\n1933\nMunro Top\n\n\n523\nSgor an Lochain Uaine\n1891\nMunro\n\n\n523\nSgor an Lochain Uaine\n1921\nMunro Top\n\n\n523\nSgor an Lochain Uaine\n1997\nMunro\n\n\n308\nSgurr a' Mhaim - Sgurr an Iubhair [Sgor an Iubhair]\n1974\nMunro Top\n\n\n308\nSgurr a' Mhaim - Sgurr an Iubhair [Sgor an Iubhair]\n1981\nMunro\n\n\n308\nSgurr a' Mhaim - Sgurr an Iubhair [Sgor an Iubhair]\n1997\nMunro Top\n\n\n1010\nSlioch\n1974\nMunro\n\n\n1010\nSlioch\n1981\nMunro Top\n\n\n1010\nSlioch\n1997\nMunro\n\n\n\n\n\n\n\n\n\nA bit of cleaning & processing\nThe data needs to be prepared further before I can proceed with a simple statistical summary and visuals. I’m going to remove the entry that’s actually a comment as well as all entries that are not Munros or Munro Tops in 2021.\n\n\n\nCode\nscot_mun_clean &lt;- scot_mun[-604,] |&gt; \n  dplyr::filter(!is.na(`2021`))\n\n\n\n\n\n\nElevation Statistics\n\n\nCode\nscot_mun_clean |&gt; \n  group_by(`2021`) |&gt;\n  summarise(n = n(),\n            smallest = min(Height_ft),\n            tallest = max(Height_ft),\n            average = mean(Height_ft),\n            median = median(Height_ft)) |&gt; \n  knitr::kable(digits = 0,\n               col.names = c(\"\", \"n\", \"Shortest\", \"Tallest\", \"Average\", \"Median\"),\n               caption = \"Peak Summary Statistics\")\n\n\n\nPeak Summary Statistics\n\n\n\nn\nShortest\nTallest\nAverage\nMedian\n\n\n\n\nMunro\n282\n3001\n4411\n3339\n3277\n\n\nMunro Top\n226\n3001\n4150\n3269\n3198\n\n\n\n\n\n\n\n\nCode\nscot_mun_clean |&gt; \n  select(DoBIH_number, Name, Height_ft, `2021`) |&gt; \n  group_by(`2021`) |&gt; \n  dplyr::arrange(desc(Height_ft)) |&gt; \n  slice_head(n = 10) |&gt; \n  ungroup() |&gt; \n  mutate(Name = forcats::fct_reorder(Name, Height_ft)) %&gt;%\n  ggplot(aes(x = Name,\n             y = Height_ft)) +\n  # set geom lower limit to 3000 b/c munros are at least 3001\n  geom_segment(aes(xend = Name, yend = 3000)) +\n  geom_point(aes(color = `2021`, shape = `2021`),\n             size = 4) +\n  labs(y = \"Height (ft)\",\n       x = \"\",\n       title = \"Ten Tallest Munros & Munro Tops\") +\n  theme_classic() +\n  theme(plot.title = element_text(hjust = -1),\n        legend.position = \"bottom\",\n        legend.title = element_blank()) +\n  scale_color_manual(values = c(\"#117A8B\", \"#79115C\")) +\n  scale_shape_manual(values = c(15, 19)) +\n  coord_flip()\n\n\n\n\n\n\n\n\n\n\n\nMapping the peaks\nThe coordinates given use the British National Grid (OSGB36) projection. I want to transformed these coordinates to EPSG 4326 (used for GPS).\n\n\nCode\n# some geographic info\n# fetch county shape for Scotland\nscotland &lt;- rnaturalearth::ne_countries(geounit = \"scotland\", \n                                        type = \"map_units\",\n                                        scale=\"large\")\n\n# fetch spatial information for water features\nwater &lt;-rnaturalearth:: ne_download(scale=10, \n                                    type=\"lakes\", \n                                    category=\"physical\")\n\n# fetch spatial information for rivers\nriver &lt;- ne_download(scale=10, \n                     type=\"rivers_lake_centerlines\", \n                     category=\"physical\")\n\nsf_use_s2(FALSE)\nwaterscotland &lt;- st_filter(water, scotland)\nriverscotland &lt;- st_filter(river, scotland)\n\nmunros2021 &lt;- scot_mun_clean |&gt; \n  select(DoBIH_number, Name, Height_m, Height_ft, xcoord, ycoord, `2021`, Comments) |&gt; \n  dplyr::filter(`2021` %in% c(\"Munro\", \"Munro Top\"))\n\n\n# crs EPSG 27700 = British National Grid -- United Kingdom Ordnance Survey\n# crds EPSG 4326 = World Geodetic System 1984, used in GPS\nprojection &lt;- st_as_sf(scot_mun_clean |&gt; \n                         filter(!is.na(xcoord),\n                                !is.na(ycoord)),\n                       coords=c(\"xcoord\",\"ycoord\"),\n                       crs = 27700) |&gt; \n  st_transform(crs=4326) |&gt; \n  st_coordinates()\n\nscot_mun_clean &lt;- scot_mun_clean |&gt; \n  filter(!is.na(xcoord)) |&gt; \n  cbind(projection)\n\n\n\n\nCode\n# reminder: X is longitude, Y is latitude\n\nscotland |&gt; \n  ggplot() +\n  geom_sf() +\n  geom_sf(data=waterscotland, fill=\"blue\") +\n  geom_sf(data=riverscotland, color=\"blue\") +\n  geom_point(data=scot_mun_clean, \n             aes(x=X, \n                 y=Y, \n                 color=`2021`, \n                 size = Height_ft),\n             shape=\"^\",\n             alpha = 0.8) +\n  theme_light() +\n  coord_sf(xlim=c(-7.8,-2), \n           ylim = c(55.9, 58.7)) +\n  scale_color_manual(values = c(\"#117A8B\", \"#79115C\")) +\n  scale_size_continuous(limits=c(3000, 4500), \n                         breaks=seq(3000, 45000, by=500)) +\n  labs(color=\"\",\n       title=\"Munros of Scotland as of 2021\",\n       caption=\"Data from TidyTuesday & the Database of British and Irish Hills\") +\n  theme(legend.position=\"right\",\n        plot.title.position=\"plot\",\n        axis.title = element_blank(),\n        panel.background = element_rect(fill=\"#cce6fe\"),\n        legend.key = element_rect(fill = NA)) +\n  guides(color = guide_legend(override.aes = list(size = 10)),\n         size = guide_legend(title = \"Height (ft)\"))"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publication Contributions",
+    "section": "",
+    "text": "Martinez-Feria R, Simmonds MB, Ozaydin B, et al. Genetic remodeling of soil diazotrophs enables partial replacement of synthetic nitrogen fertilizer with biological nitrogen fixation in maize. Scientific Reports 14, 27754 (2024). DOI: 10.1038/s41598-024-78243-3\nWen A, Havens KL, Bloch SE, et al. Enabling Biological Nitrogen Fixation for Cereal Crops in Fertilized Fields. ACS Synthetic Biology 2021 10 (12), 3264-3277 DOI: 10.1021/acssynbio.1c00049\nBloch SE, Clark R, Gottlieb SS, et al. Biological nitrogen fixation in maize: optimizing nitrogenase expression in a root-associated diazotroph. Journal Experimental Botany. 2020 Jul 25;71(15):4591-4603. DOI: 10.1093/jxb/eraa176. PMID: 32267497; PMCID: PMC7382387.",
+    "crumbs": [
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "index2.html",
+    "href": "index2.html",
+    "title": "Author",
+    "section": "",
+    "text": "Twitter\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nHello, I am Author.\nFeel free to edit the text and layout to make this website your own!\nThis is a template with side navigation. Read more about website navigation here.\nIn this template you can find examples of using listing (grid, table, default) in Projects, Talks, Blog. Read more about lists here."
+  }
+]

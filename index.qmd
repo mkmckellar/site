@@ -1,0 +1,46 @@
+---
+title: "Bio"
+image: chickadee2.jpg
+about:
+  id: hero-heading
+  template: marquee
+  image-shape: rectangle
+  image-width: 30em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/megankmckellar/
+    - icon: github
+      text: Github
+      href: https://github.com/mkmckellar
+---
+
+::: {#hero-heading}
+Hello, I'm Megan! I am a life sciences research professional with many years of experience in plant and microbiology-related research. Recently my professional focus has grown from benchside work to leveraging data analysis and statistical modeling to extract meaning from complex data sets. While I'm proficient in R, I'm actively expanding my knowledge of other skill sets.
+
+When I'm not staring at a screen, I enjoy tending to my patio garden, hiking, and reading. Let's connect and you can tell me about your book recommendations, favorite learning resources, or cool R packages!
+
+### Education
+
+**California State University, East Bay** \| Hayward, CA
+
+MS in Statistics \| May 2024
+
+**University of California, Davis** \| Davis, CA
+
+BS in Biological Sciences with a minor in Spanish \| June 2014
+
+**Laney College** \| Oakland, CA
+
+AS in Mathematics \| June 2022
+
+### Professional Experience
+
+**Associate Scientist** at Pivot Bio \| Berkeley, CA \| 2017-2025
+
+**Research Assistant** at Santa Cruz Biotechnology \| Santa Cruz, CA \| 2014-2017
+
+**Math Tutor** at Partners in Learning \| Davis, CA \| 2013-2014
+
+**Student Laboratory & Greenhouse Assistant II** at UC Davis \| Davis, CA \| 2011-2013
+:::

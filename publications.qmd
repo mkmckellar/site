@@ -1,0 +1,11 @@
+---
+title: "Publication Contributions"
+editor: visual
+format: html
+---
+
+Martinez-Feria R, Simmonds MB, Ozaydin B, et al. [Genetic remodeling of soil diazotrophs enables partial replacement of synthetic nitrogen fertilizer with biological nitrogen fixation in maize.](https://www.nature.com/articles/s41598-024-78243-3) Scientific Reports 14, 27754 (2024). DOI: 10.1038/s41598-024-78243-3
+
+Wen A, Havens KL, Bloch SE, et al. [Enabling Biological Nitrogen Fixation for Cereal Crops in Fertilized Fields.](https://pubs.acs.org/doi/10.1021/acssynbio.1c00049) ACS Synthetic Biology 2021 10 (12), 3264-3277 DOI: 10.1021/acssynbio.1c00049
+
+Bloch SE, Clark R, Gottlieb SS, et al. [Biological nitrogen fixation in maize: optimizing nitrogenase expression in a root-associated diazotroph.](https://academic.oup.com/jxb/article/71/15/4591/5817768?login=false) Journal Experimental Botany. 2020 Jul 25;71(15):4591-4603. DOI: 10.1093/jxb/eraa176. PMID: 32267497; PMCID: PMC7382387.

@@ -1,0 +1,28 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/scottish_hills/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/project_1/index.html",
+      "/projects/project_2/index.html",
+      "/projects/pkg_1/index.html",
+      "/projects/pkg_2/index.html"
+    ]
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": []
+  },
+  {
+    "listing": "/python_projects/index.html",
+    "items": [
+      "/python_projects/py_project_1/index.html",
+      "/python_projects/py_project_2/index.html"
+    ]
+  }
+]

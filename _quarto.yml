@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "Hello!"
+
+  page-footer:
+    left: "&copy; Copyright 2025, Megan McKellar"
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+
+  sidebar:
+    pinned: true
+    align: center
+    style: "docked"
+    collapse-level: 1
+    contents:
+
+      - text: "About"
+        href: index.qmd
+
+      - text: "Blog & Portfolio"
+        href: blog.qmd
+        
+      - text: "Publications"
+        href: publications.qmd
+            
+format:
+  html:
+    theme: yeti
+    css: styles.css
+    toc: true
+
+
