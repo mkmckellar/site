@@ -1,6 +1,5 @@
 ---
 title: "Bio"
-image: chickadee2.jpg
 about:
   id: hero-heading
   template: marquee
