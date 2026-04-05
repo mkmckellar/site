@@ -3,7 +3,7 @@ title: "Earthquake Frequency, Fear, and Preparedness"
 author: "Megan McKellar"
 date: "2025-11-02"
 categories: [R code, data exploration, mapping, data visualizations, Shiny]
-image: "e1.jpg"
+image: "img2.jpg"
 format: 
   html: 
     theme: yeti
