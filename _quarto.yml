@@ -7,7 +7,7 @@ website:
   title: "Hello!"
 
   page-footer:
-    left: "&copy; Copyright 2025, Megan McKellar"
+    left: "&copy; Copyright 2026, Megan McKellar"
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
 
   sidebar:
