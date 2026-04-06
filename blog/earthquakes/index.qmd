@@ -1,7 +1,7 @@
 ---
 title: "Earthquake Frequency, Fear, and Preparedness"
 author: "Megan McKellar"
-date: "2025-11-02"
+date: "2026-04-03"
 categories: [R code, data exploration, mapping, data visualizations, Shiny]
 image: "img2.jpg"
 format: 
